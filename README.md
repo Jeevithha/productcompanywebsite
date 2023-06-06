@@ -30,11 +30,12 @@ Validate the layout in various browsers.
 
 Validate the HTML code.
 
-### Step 6:
+### Step 7:
 
 Publish the website in the given URL.
 
 ## PROGRAM :
+## styles.css
 ```
 .home{
             height: 700px;
