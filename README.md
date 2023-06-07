@@ -36,697 +36,288 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
-home.html
-
+### home.html:
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Home Page
-        </title>
-        <meta name="viewport" 
-         content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/css/styles.css">
-    <style>
-    .text{
-        color:blueviolet;
-        font-family:'Lucida Sans';
-        font-size: 30px;
-        text-align:center;
-    }
-    img{
-        height: 150px;
-        width: 150px;
-        align-items:center;
-    }
-    </style>
+  <head>
+    <title>Preethi&Design Private Limited</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+  </head>
 
-    </head>
-    <body>
-        <div class="home">
-            <div class="header">
-                <header>
-                    <div class=logo></div>
-                    <div class=h>
-                    <a href="home.html" title="Home" style="color: darkred; text-decoration: none;"><b>Home</b></a></div>
-                    <div class="prod">
-                        <a href="products.html" title="Products" style="color: darkred; text-decoration: none;"><b>Products</b></a>
-                    </div>
-                    <div class="people">
-                        <a href="people.html" title="People" style="color:darkred; text-decoration: none;"><b>People</b></a>
-                    </div>
-                    <div class="contact">
-                        <a href="contact.html" title="Contact Us" style="color:darkred; text-decoration: none;"><b>Contact Us</b></a>
-                    </div>
-                </header>
-                <div class="title">
-                    <h1>Deeps Fancy Universe</h1>
-                </div><br>
-                <div class="content">
-                    <div class="text">
-                    <marquee><b>Feel BEAUTY through our Store</b></marquee>
-                    <p style="color:purple; font-family:'Tahoma'; font-size:20px;"> This is the Official Website of our Fancy Store</p>
-                    </div>
-                    <p>Buy Fancy items and Cosmetics online for Women from <span style="background-color:lime">Deeps Fancy Universe</span>
-                         for Rs.100 | Buy cosmetics in ONE SIZE online | 7 Days Returns | Trend setting models | And much more</p>
-                    <br>
-                <center>
-                    <img src="/static/images/ben8.jpeg">
-                    <img src="/static/images/ben3.jpg">
-                    <img src="/static/images/ben4.jpg">
-                    <img src="/static/images/ben5.jpeg">
-                </center>
-                </div>
-                <div class="footer">
-                <footer style="color:white">
-                Copyright &copy;2023 Developed by Mahisha Sivakumar</footer></div>
-            </div>
+  <body>
+    <div class="container">
+      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="menu">
+        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a>People</a></div>
+        <div class="menuitem"><a>Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1>About Us</h1>
+          <img src="./img/logo.jpg" alt="Building" />
+          <div class="contenttext">
+            At Preethi&Design Private Limited ,we believe in making the best and 
+            comfortable clothing for all without any drowback. Our main motto is to 
+            produce good products with best quality at an affordable price. 
+            <br />
+            Our company mainly focus on giving the best product for the customers.
+            We have collabed with one of the top companies like Louis Vuitton,
+            Gucci and Versace.We are proud to start our company in India. We 
+            assure you for the brand and quality. 
+            <ul>
+              <li>Comfy</li>
+              <li>Affordable</li>
+              <li>Customer satisfaction matters the most</li>
+            </ul>
+          </div>
         </div>
-    </body>
+      </div>
+      <div class="footer">
+        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+      </div>
+    </div>
+  </body>
 </html>
 
-product.html
-
+### products.html:
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Products
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/css/styles.css">
-        <style>
-        .home{
-            height: 1555px;
-            width: 85%;
-            border: 12px solid red;
-            padding-left:10px;
-            padding-right:10px;
-            margin-left: auto;
-            margin-right:auto;
-            background-color:cyan;
-        }
-        .text{
-            color:blueviolet;
-            font-family:'Lucida Sans';
-            font-size: 30px;
-            text-align:center;
-        
-        }
-        .content{
-            border:3px solid red;
-            background-color: white;
-            width:98%;
-            height:1190px;
-            padding:10px;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        .ph1{
-            background-image: url(/static/images/item1.jpeg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:200px;
-            width:30%;
-            position:relative;
-            left: 50px;
-        }
-        .l1{
-            color: gold;
-            position:relative;
-            right:380px;
-            
-            
-        }
-        .ph2{
-            background-image: url(/static/images/item2.webp);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:200px;
-            width:30%;
-            position:relative;
-            left: 50px;
-            
-        }
-        .l2{
-            color: sandybrown;
-            position:relative;
-            right:380px;
-        }
-        .ph3{
-            background-image: url(/static/images/item3.webp);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:210px;
-            width:30%;
-            position:relative;
-            left: 50px;
-            
-        }
-        .l3{
-            color: burlywood;
-            position:relative;
-            right:380px;
-        }
-        .ph4{
-            background-image: url(/static/images/item4.jpeg);
-            background-position-x: center;
-            border:1px solid black;
-            height:200px;
-            width:30%;
-            position:relative;
-            left: 700px;
-            bottom:930px;
-            background-size: 310px;
-            background-repeat: no-repeat;
-            
-            
-        }
-        .l4{
-            color: burlywood;
-            position:relative;
-            left:270px;
-            bottom: 930px;
-        }
-    
-        .ph5{
-            background-image: url(/static/images/item5.png);
-            background-position-x: center;
-            border:1px solid black;
-            height:200px;
-            width:30%;
-            position:relative;
-            left: 700px;
-            bottom:930px;
-            background-size: 280px;
-            background-repeat: no-repeat;
-            
-            
-        }
-        .l5{
-            color: cadetblue;
-            position:relative;
-            left:270px;
-            bottom: 930px;
-        }
+  <head>
+    <title>Preethi&Design Private Limited</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/logo.jpg type="image/x-icon" />
+  </head>
 
-        .ph6{
-            background-image: url(/static/images/item6.jpg);
-            background-position-x: center;
-            border:1px solid black;
-            height:200px;
-            width:30%;
-            position:relative;
-            left: 700px;
-            bottom:930px;
-            background-size: 280px;
-            background-repeat: no-repeat;
-            
-            
-        }
-        .l6{
-            color: crimson  ;
-            position:relative;
-            left:270px;
-            bottom: 930px;
-        }
-        .bot{
-            text-align:center;
-            font-size:larger;
-            color:magenta;
-
-        }
-        </style>
-    </head>
-    <body>
-        <div class="home">
-            <div class="header">
-                <header>
-                    <div class=logo></div>
-                    <div class=h>
-                    <a href="home.html" title="Home" style="color: darkred; text-decoration: none;"><b>Home</a></div>
-                    <div class="prod">
-                        <a href="products.html" title="Products" style="color: darkred; text-decoration: none;"><b>Products</b></a>
-                    </div>
-                    <div class="people">
-                        <a href="people.html" title="People" style="color:darkred; text-decoration: none;"><b>People</b></a>
-                    </div>
-                    <div class="contact">
-                        <a href="contact.html" title="Contact Us" style="color:darkred; text-decoration: none;"><b>Contact Us</b></a>
-                    </div>
-                </header>
-                <div class="title">
-                    <h1>Products</h1>
-                </div><br>
-                <div class="content">
-                    <div class="text">
-                    <p>These are the products that are available now</p>
-                    </div>
-                    <div class="ph1"></div>
-                    <div class="l1"><p align="center"><b>Lipstick<br> Price: 1999.00</b><br><br><br><br></p></div>
-                    <div class="ph2"></div>
-                    <div class="l2"><p align="center"><b>Foundation</b><br> Price: 1899.00</b><br><br><br><br></p></div>
-                    <div class="ph3"></div>
-                    <div class="l3"><p align="center"><b>Compact Powder<br> Price: 1999.00</b><br<br><br><br></p></div>
-                    <div class="ph4"></div>
-                    <div class="l4"><p align="center"><b>Make-up Brush<br> Price: 6999.00</b><br><br><br><br></p></div>
-                    <div class="ph5"></div>
-                    <div class="l5"><p align="center"><b>Make-up Brush<br> Price: 3999.00</b><br><br><br><br></p></div>
-                    <div class="ph6"></div>
-                    <div class="l6"><p align="center"><b>Primer<br> Price: 5999.00</b><br><br><br><br></p></div>
-         
-                </div>
-                <div class="bot"><p>To Order Online: Call 90 80 70 2009</p></div>
-
-                <div class="footer">
-                <footer style="color:white">
-                Copyright &copy;2023 Developed by Mahisha Sivakumar</footer></div>
-            </div>
+  <body>
+    <div class="container">
+      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="menu">
+        <div class="menuitem"><a href="/static/home.html">Home</a></div>
+        <div class="menuitemselected">
+          <a href="/static/products.html">Products</a>
         </div>
-    </body>
+        <div class="menuitem"><a>People</a></div>
+        <div class="menuitem"><a>Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="productcontent">    
+          <h1>Our Premium Products</h1>
+          <div class="productitems">
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design1.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Lehenga</div>
+                  <div class="itemprice">Price: Rs.10,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design2.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Chudidhar</div>
+                  <div class="itemprice">Price: Rs.5,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design3.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Kurti</div>
+                  <div class="itemprice">Price: Rs.2,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design4.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Saree</div>
+                  <div class="itemprice">Price: Rs.7,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design5.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Chudidhar</div>
+                  <div class="itemprice">Price: Rs.5,900.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/design6.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Mini Frock</div>
+                  <div class="itemprice">Price: Rs.3,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m1.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Jumpsuite</div>
+                  <div class="itemprice">Price: Rs.2,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m2.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Casuals</div>
+                  <div class="itemprice">Price: Rs.1,500.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m3.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Hoodies</div>
+                  <div class="itemprice">Price: Rs.1,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m4.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Tuxedos</div>
+                  <div class="itemprice">Price: Rs.7,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m5.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Suits</div>
+                  <div class="itemprice">Price: Rs.8,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                  <div class="itemimage">
+                  <img src="/static/img/m6.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">TurtleNeck</div>
+                  <div class="itemprice">Price: Rs.2,300.00 </div>
+              </div>
+          </div>
+          </div>        
+      </div>
+      <div class="footer">
+        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+      </div>
+    </div>
+  </body>
 </html>
 
-people.html
-
+### people.html:
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            People
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/css/styles.css">
-        <style>
-        .home{
-            height: 3000px;
-            width: 85%;
-            border: 12px solid red;
-            padding-left:10px;
-            padding-right:10px;
-            margin-left: auto;
-            margin-right:auto;
-            background-color:cyan;
-        }
-        .text{
-        color:blueviolet;
-        font-family:'Lucida Sans';
-        font-size: 30px;
-        text-align:center;
-        
-        }
-        .content{
-            border:2px solid green;
-            background-color:lime;
-            width:98%;
-            height:2690px;
-            padding:10px;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        .ceoph{
-            background-image: url(/static/images/p1.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:3px solid gold;
-            height:300px;
-            width:20%;
-            position:relative;
-            left: 0px;
-            margin-left:auto;
-            margin-right: auto;
-        }
-        .ceo{
-            color: red;
-            position:relative;
-            text-align:center;
-            
-            
-        }
-        .manph1{
-            background-image: url(/static/images/P2.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:300px;
-            width:20%;
-            position:relative;
-            margin-left:auto;
-            margin-right:auto;            
-        }
-        .man1{
-            color: red;
-            position:relative;
-            text-align:center;
-            
-        }
-        .manph2{
-            background-image: url(/static/images/P3.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:300px;
-            width:20%;
-            position:relative;
-            margin-left:auto;
-            margin-right:auto;
+  <head>
+    <title>Preethi&Design Private Limited</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon"/>
+  </head>
 
-            
-        }
-        .man2{
-            color: red;
-            position:relative;
-            text-align:center;
-        }
-        
-        .amph1{
-            background-image: url(/static/images/P4.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:300px;
-            width:20%;
-            position:relative;
-            margin-left:auto;
-            margin-right:auto;
+  <body>
+    <div class="container">
+      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="menu">
+        <div class="menuitemselected"><a href="/home/">Home</a></div>
+        <div class="menuitemselected"><a href="/products/">Products</a></div>
+        <div class="menuitemselected"><a href="/people/">People</a></div>
+        <div class="menuitemselected"><a href="/contactus/">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <div class="productcontent">   
+          <h1>CEO of the Brand</h1>
+          <div class="productitems">
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/ceo gucci.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Marco Bizzarri</div>
+                  <div class="itemprice">President & CEO of Gucci</div>
+              </div>
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/ceo louis.jpg"  alt="product image">
+                  </div>
+                  <div class="itemname">Michael Burke</div>
+                  <div class="itemprice">Founder & CEO of Louis Vuitton</div>
+              </div>
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/ceo versace.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Emmanuel Gintzburger</div>
+                  <div class="itemprice">CEO of Versace</div>
+              </div>
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/gucci.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Kim Taehyung</div>
+                  <div class="itemprice">Ambassador of Gucci</div>
+              </div>
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/louis.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Deepika Padukone</div>
+                  <div class="itemprice">Ambassador of Louis Vuitton</div>
+              </div>
+              <div class="productitem">
+                  <div class="itemimage">
+                  <img src="/static/img/versace.jpg" alt="product image">
+                  </div>
+                  <div class="itemname">Zendaya</div>
+                  <div class="itemprice">Ambassador of Versace</div>
+              </div>
 
-            
-        }
-        .am1{
-            color: red;
-            position:relative;
-            text-align:center;
-        }
-
-        .amph2{
-            background-image: url(/static/images/P6.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:220px;
-            width:20%;
-            position:relative;
-            margin-left:auto;
-            margin-right:auto;
-
-            
-        }
-        .am2{
-            color: red;
-            position:relative;
-            text-align:center;
-        }
-        .amph3{
-            background-image: url(/static/images/P5.jpg);
-            background-size: 250px;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            border:1px solid black;
-            height:250px;
-            width:20%;
-            position:relative;
-            margin-left:auto;
-            margin-right:auto;
-
-            
-        }
-        .am3{
-            color: red;
-            position:relative;
-            text-align:center;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="home">
-            <div class="header">
-                <header>
-                    <div class=logo></div>
-                    <div class=h>
-                    <a href="home.html" title="Home" style="color: darkred; text-decoration: none;"><b>Home</b></a></div>
-                    <div class="prod">
-                        <a href="products.html" title="Products" style="color: darkred; text-decoration: none;"><b>Products</b></a>
-                    </div>
-                    <div class="people">
-                        <a href="people.html" title="People" style="color:darkred; text-decoration: none;"><b>People</b></a>
-                    </div>
-                    <div class="contact">
-                        <a href="contact.html" title="Contact Us" style="color:darkred; text-decoration: none;"><b>Contact Us</b></a>
-                    </div>
-                </header>
-                <div class="title">
-                    <h1>People</h1>
-                </div><br>
-                <div class="content">
-                    <div class="text">
-                    <p>Board Members</p>
-                    <h4><u>Chairman</u></h4>
-                    </div>
-                    <div class="ceoph"></div>
-                    <div class="ceo"><p align="center"><b><h2>Jessi</h2></b></div>
-                    <br>
-                    <div class="text">
-                        <p><b><u>Head executives</u></b></p><br>
-                    </div>
-                    <div class="manph1"></div>
-                    <div class="man1"><p align="center"><b><h2>Vasundra Sri</h2></b></p></div>
-                    <div class="manph2"></div>
-                    <div class="man2"><p><b><h2>Bolisetti Sanjitha</h2></b></p></div>
-                    <br>
-                    <div class="text"><p><b><u>Managers</u></b></p></div><br>
-                    <div class="amph1"></div>
-                    <div class="am1"><p align="center"><b><h2>Abinaya</h2></b></p></div>
-                    <div class="amph2"></div>
-                    <div class="am2"><p align="center"><b><h2>Atchaya</h2></b></p></div>
-                    <div class="amph3"></div>
-                    <div class="am3"><p align="center"><b><h2>Divya</h2></b></p></div><br>
-                    <div class="text">Thank you so much for your kind support!<br>Hope our products had made you more B-E-A-UTIFUL!</div>
-                </div>
-                <div class="footer">
-                <footer style="color:white">
-                Copyright &copy;2023 Developed by Deepika Srinivasan</footer></div>
-            </div>
-        </div>
-    </body>
+          </div>
+          </div>       
+      </div>
+      <div class="footer">
+        Copyright &#169; Preethi&Design Private Limited, Developed by Preethi
+      </div>
+    </div>
+  </body>
 </html>
 
-contact.html
-
+### contact.html:
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Contact Us
-        </title>
-        <meta name="viewport" 
-         content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/css/styles.css">
-    <style>
-    .text{
-        color:blueviolet;
-        font-family:'Lucida Sans';
-        font-size: 30px;
-        text-align:center;
-    }
-    
-    </style>
+  <head>
+    <title>Preethi&Design Private Limited</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+  </head>
 
-    </head>
-    <body>
-        <div class="home">
-            <div class="header">
-                <header>
-                    <div class=logo></div>
-                    <div class=h>
-                    <a href="home.html" title="Home" style="color: darkred; text-decoration: none;"><b>Home</b></a></div>
-                    <div class="prod">
-                        <a href="products.html" title="Products" style="color: darkred; text-decoration: none;"><b>Products</b></a>
-                    </div>
-                    <div class="people">
-                        <a href="people.html" title="People" style="color:darkred; text-decoration: none;"><b>People</b></a>
-                    </div>
-                    <div class="contact">
-                        <a href="contact.html" title="Contact Us" style="color:darkred; text-decoration: none;"><b>Contact Us</b></a>
-                    </div>
-                </header>
-                <div class="title">
-                    <h1>Contact Us</h1>
-                </div><br>
-                <div class="content">
-                    <div class="text">
-                    <p><b>Here are the details about us
-                    <h5>Do contact us for any need</h5></b></p>
-                    
-                    </div>
-                    <b><h2>Contact Information:</h2></b>
-                    <p><b>&emsp;&ensp;Address:</b>
-                        Guduvancherry, Chennai, TamilNadu, India.
-                    </p>
-                    <ul>
-                        <li><b>Landline:</b> 12345678</li>
-                        <li><b>Mobile</b>: 90 80 70 2009</li>
-                        <li><b>Facebook</b>: fb/deepsfancy</li>
-                        <li><b>Email Id:</b>deeps@fancyuniv.com</li>
-                    </ul>
-                    <div style="text-align: center;color:violet;font-size:20px;"><b>Use our services and Beautify Yourself!</b></div>
-
-                </div>
-                <div class="footer">
-                <footer style="color:white">
-                Copyright &copy;2023 Developed by Mahisha Sivakumar</footer></div>
-            </div>
+  <body>
+    <div class="container">
+      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="menu">
+        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitem"><a href="/static/contacts.html">Contact us</a></div>
+      </div>
+      <div class="content">
+        <div class="homecontent">
+          <h1>About Us</h1>
+       
+          <div class="contenttext">
+           Mail us at  Preethi&Design@gmail.com
+           <br>
+           Contact us at 220057942
+           <br>
+           Our main office is at 5th car street,TamilNadu,India.
+          </div>
         </div>
-    </body>
+      </div>
+      <div class="footer">
+        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+      </div>
+    </div>
+  </body>
 </html>
-
-style.css
-
-.home{
-            height: 700px;
-            width: 85%;
-            border: 12px solid red;
-            padding-left:10px;
-            padding-right:10px;
-            margin-left: auto;
-            margin-right:auto;
-            background-color:cyan;
-        }
-        .content{
-            border:1px solid whitesmoke;
-            background-color: white;
-            width:95%;
-            height:1190px;
-            padding:10px;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        .header{
-            height: 128px;
-            width:100%;
-            background-image: url(/static/images/header.jpg);
-            background-size: cover;
-            
-        }
-        .logo{
-            height:18%;
-            width: 10%;
-            position:absolute;
-            background-image: url(/static/images/icon.png);
-            background-size:cover;
-            
-        }
-        .prod{
-            height:auto;
-            width:auto;
-            position:relative;
-            bottom:10px;
-            left:550px;
-            border:4px solid transparent;
-            text-align:center;
-            display: inline;
-            padding:15px;
-            font-family:'Gill Sans MT';
-            font-size: large;  
-        }
-        .prod:hover{
-            background-color:red;
-        }
-        .people{
-            height:auto;
-            width:auto;
-            position:relative;
-            bottom:10px;
-            left:700px;
-            border:4px solid transparent;
-            text-align:center;
-            display: inline;
-            padding:15px;
-            font-family:'Gill Sans MT';
-            font-size: large;  
-        }
-        .people:hover{
-            background-color:red;
-        }
-        .contact{
-            height:20px;
-            width:10%;
-            position:relative;
-            bottom:45px;
-            left:1000px;
-            border:4px solid transparent;
-            text-align:center;
-            padding:15px;
-            font-family:'Gill Sans MT';
-            font-size: large;  
-        }
-        .contact:hover{
-            background-color:red;
-        }
-                
-        .h{
-            height:20px;
-            width:10%;
-            position:relative;
-            top:30px;
-            left:200px;
-            border:4px solid transparent;
-            text-align:center;
-            
-            padding:15px;
-            font-family:'Gill Sans MT';
-            font-size: large;  
-        }
-        .h:hover{
-            background-color:red;
-            overflow:hidden;
-        }
-        .footer{
-            border: 15px solid red;
-            width:98%;
-            height:10px;
-            position:relative;
-            bottom: 1px;
-            background-color:red;
-            text-align:center;
-
-        }
-        .title{
-            border:2px solid pink;
-            background-color:yellow;
-            padding:1px;
-            width:99.7%;
-            height: 70px;
-            text-align:center;
-            font-family:'Impact';
-            margin-left:auto;
-            margin-right: auto;
-            
-        }
-        .content{
-            border:1px solid red;
-            background-color: white;
-            width:98%;
-            height:400px;
-            padding:10px;
-            margin-left:auto;
-            margin-right:auto;
-
-        }
-        ```
-  
+```
 ## OUTPUT:
+Home Page:
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/56196040-f4d3-467d-8330-4df4c6bdeb6f)
 
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/7a65f460-a86b-4bef-9aeb-db9a27c86b45)
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/6732efb2-6ef5-49a1-978b-83f1298f55d7)
 
-## Result:
+
 Thus a website is designed for the software product company and the HTML,CSS code are validated.
