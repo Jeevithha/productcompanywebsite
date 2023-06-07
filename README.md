@@ -40,14 +40,14 @@ Publish the website in the given URL.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Preethi&Design Private Limited</title>
+    <title>jeevitha&Design Private Limited</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="banner">jeevitha&Design Private Limited</div>
       <div class="menu">
         <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
         <div class="menuitem"><a href="/static/products.html">Products</a></div>
@@ -59,7 +59,7 @@ Publish the website in the given URL.
           <h1>About Us</h1>
           <img src="./img/logo.jpg" alt="Building" />
           <div class="contenttext">
-            At Preethi&Design Private Limited ,we believe in making the best and 
+            At jeevitha&Design Private Limited ,we believe in making the best and 
             comfortable clothing for all without any drowback. Our main motto is to 
             produce good products with best quality at an affordable price. 
             <br />
@@ -76,7 +76,7 @@ Publish the website in the given URL.
         </div>
       </div>
       <div class="footer">
-        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+        Copyright &#169; jeevitha&Design Private.Ltd, Developed by jeevitha.
       </div>
     </div>
   </body>
@@ -86,14 +86,14 @@ Publish the website in the given URL.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Preethi&Design Private Limited</title>
+    <title>jeevitha&Design Private Limited</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="icon" href="./img/logo.jpg type="image/x-icon" />
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="banner">jeevitha&Design Private Limited</div>
       <div class="menu">
         <div class="menuitem"><a href="/static/home.html">Home</a></div>
         <div class="menuitemselected">
@@ -194,7 +194,7 @@ Publish the website in the given URL.
           </div>        
       </div>
       <div class="footer">
-        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+        Copyright &#169; jeevitha&Design Private.Ltd, Developed by Preethi.
       </div>
     </div>
   </body>
@@ -204,14 +204,14 @@ Publish the website in the given URL.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Preethi&Design Private Limited</title>
+    <title>jeevitha&Design Private Limited</title>
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="icon" href="./img/logo.jpg" type="image/x-icon"/>
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="banner">jeevitha&Design Private Limited</div>
       <div class="menu">
         <div class="menuitemselected"><a href="/home/">Home</a></div>
         <div class="menuitemselected"><a href="/products/">Products</a></div>
@@ -269,7 +269,7 @@ Publish the website in the given URL.
           </div>       
       </div>
       <div class="footer">
-        Copyright &#169; Preethi&Design Private Limited, Developed by Preethi
+        Copyright &#169; jeevitha&Design Private Limited, Developed by Preethi
       </div>
     </div>
   </body>
@@ -279,14 +279,14 @@ Publish the website in the given URL.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Preethi&Design Private Limited</title>
+    <title>jeevitha&Design Private Limited</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">Preethi&Design Private Limited</div>
+      <div class="banner">jeevitha&Design Private Limited</div>
       <div class="menu">
         <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
         <div class="menuitem"><a href="/static/products.html">Products</a></div>
@@ -298,16 +298,16 @@ Publish the website in the given URL.
           <h1>About Us</h1>
        
           <div class="contenttext">
-           Mail us at  Preethi&Design@gmail.com
+           Mail us at  jeevitha&Design@gmail.com
            <br>
-           Contact us at 220057942
+           Contact us at 22009398
            <br>
            Our main office is at 5th car street,TamilNadu,India.
           </div>
         </div>
       </div>
       <div class="footer">
-        Copyright &#169; Preethi&Design Private.Ltd, Developed by Preethi.
+        Copyright &#169; jeevitha&Design Private.Ltd, Developed by Preethi.
       </div>
     </div>
   </body>
