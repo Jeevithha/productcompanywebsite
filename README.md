@@ -521,16 +521,15 @@ Publish the website in the given URL.
 </div>
 ```
 ## OUTPUT:
-##  Home Page:
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/37af6093-9cd0-4391-9713-c4461dedd3a8)
 
-##  Products Page:
+
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/a78bdeac-ce07-4c56-a51d-f6cef3bd31d7)
 
-##  People Page:
+
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/86ec8ec6-2f6a-4781-93a7-13230b168603)
 
-##  Contact Page:
+
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/8e8bdbbc-03c1-419c-8fba-b691acbac1c6)
 
 ##  Result:
