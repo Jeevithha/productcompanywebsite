@@ -725,7 +725,8 @@ style.css
         ```
   
 ## OUTPUT:
-            
+            ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/32c4e23f-3d3b-402d-a791-47ed472665bf)
+
      ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/17c4762b-4680-4e7a-a969-efa582b02599)
 
      ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/35e8cf02-491a-4b37-80eb-bec3ae2c683e)
