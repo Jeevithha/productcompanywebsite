@@ -241,7 +241,9 @@ Publish the website in the given URL.
     </body>
 </html>
 ```
+
 ## products.html:
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -448,7 +450,9 @@ Publish the website in the given URL.
     </body>
 </html>
 ```
+            
 ## people.html:
+            
   ```
   <!DOCTYPE html>
 <html lang="en">
@@ -656,7 +660,9 @@ Publish the website in the given URL.
     </body>
   </html>
   ```
+            
   ## contact.html:
+            
   ```
   <!DOCTYPE html>
 <html lang="en">
@@ -727,6 +733,7 @@ Publish the website in the given URL.
   ```
   
 ## OUTPUT:
+            
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/790ee089-af02-4e92-bc0e-66da586e19fc)
 
 ### Home Page:
