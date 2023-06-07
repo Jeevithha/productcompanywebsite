@@ -314,10 +314,17 @@ Publish the website in the given URL.
 </html>
 ```
 ## OUTPUT:
-Home Page:
+##  Home Page:
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/56196040-f4d3-467d-8330-4df4c6bdeb6f)
-
+##  Products Page:
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/6732efb2-6ef5-49a1-978b-83f1298f55d7)
+##  People Page:
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/182eb453-e38e-4c0e-a510-171d12f8c8e7)
+##  Contact Page:
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/0f1a4ca4-b105-4862-8fc6-58248ae454fb)
+##  Server Output:
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/26c3faaa-d204-422d-8ecd-ecdd1272c0ea)
 
+##  Result:
 
 Thus a website is designed for the software product company and the HTML,CSS code are validated.
