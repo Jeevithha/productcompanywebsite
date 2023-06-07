@@ -69,6 +69,7 @@ Publish the website in the given URL.
 </html>
 ```
 ## about.html:
+```
 {% load static %}
 
 <!DOCTYPE html>
@@ -518,6 +519,7 @@ Publish the website in the given URL.
     &#169; 2021 Apple Lt., Developed by jeevitha.
   </div>
 </div>
+```
 ## OUTPUT:
 ##  Home Page:
 ![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/37af6093-9cd0-4391-9713-c4461dedd3a8)
