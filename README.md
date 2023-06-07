@@ -36,294 +36,500 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
-### home.html:
+## home html:
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>jeevitha&Design Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">jeevitha&Design Private Limited</div>
+      <div class="banner"></div>
       <div class="menu">
-        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitem"><a>People</a></div>
-        <div class="menuitem"><a>Contact Us</a></div>
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
       </div>
       <div class="content">
-        <div class="homecontent">
-          <h1>About Us</h1>
-          <img src="./img/logo.jpg" alt="Building" />
-          <div class="contenttext">
-            At jeevitha&Design Private Limited ,we believe in making the best and 
-            comfortable clothing for all without any drowback. Our main motto is to 
-            produce good products with best quality at an affordable price. 
-            <br />
-            Our company mainly focus on giving the best product for the customers.
-            We have collabed with one of the top companies like Louis Vuitton,
-            Gucci and Versace.We are proud to start our company in India. We 
-            assure you for the brand and quality. 
-            <ul>
-              <li>Comfy</li>
-              <li>Affordable</li>
-              <li>Customer satisfaction matters the most</li>
-            </ul>
-          </div>
-        </div>
+        <h1 id="home-h" >THINK DIFFERENT.</h1>
+        <p id="home-p">Everything is designed. Few things are designed well. And those are designed by us.</p>
       </div>
       <div class="footer">
-        Copyright &#169; jeevitha&Design Private.Ltd, Developed by jeevitha.
-      </div>
-    </div>
-  </body>
-</html>
-
-### products.html:
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>jeevitha&Design Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/logo.jpg type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">jeevitha&Design Private Limited</div>
-      <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitemselected">
-          <a href="/static/products.html">Products</a>
-        </div>
-        <div class="menuitem"><a>People</a></div>
-        <div class="menuitem"><a>Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="productcontent">    
-          <h1>Our Premium Products</h1>
-          <div class="productitems">
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design1.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Lehenga</div>
-                  <div class="itemprice">Price: Rs.10,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design2.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Chudidhar</div>
-                  <div class="itemprice">Price: Rs.5,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design3.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Kurti</div>
-                  <div class="itemprice">Price: Rs.2,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design4.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Saree</div>
-                  <div class="itemprice">Price: Rs.7,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design5.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Chudidhar</div>
-                  <div class="itemprice">Price: Rs.5,900.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/design6.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Mini Frock</div>
-                  <div class="itemprice">Price: Rs.3,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m1.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Jumpsuite</div>
-                  <div class="itemprice">Price: Rs.2,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m2.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Casuals</div>
-                  <div class="itemprice">Price: Rs.1,500.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m3.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Hoodies</div>
-                  <div class="itemprice">Price: Rs.1,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m4.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Tuxedos</div>
-                  <div class="itemprice">Price: Rs.7,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m5.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Suits</div>
-                  <div class="itemprice">Price: Rs.8,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/m6.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">TurtleNeck</div>
-                  <div class="itemprice">Price: Rs.2,300.00 </div>
-              </div>
-          </div>
-          </div>        
-      </div>
-      <div class="footer">
-        Copyright &#169; jeevitha&Design Private.Ltd, Developed by Preethi.
-      </div>
-    </div>
-  </body>
-</html>
-
-### people.html:
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>jeevitha&Design Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="icon" href="./img/logo.jpg" type="image/x-icon"/>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">jeevitha&Design Private Limited</div>
-      <div class="menu">
-        <div class="menuitemselected"><a href="/home/">Home</a></div>
-        <div class="menuitemselected"><a href="/products/">Products</a></div>
-        <div class="menuitemselected"><a href="/people/">People</a></div>
-        <div class="menuitemselected"><a href="/contactus/">Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="productcontent">   
-          <h1>CEO of the Brand</h1>
-          <div class="productitems">
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/ceo gucci.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Marco Bizzarri</div>
-                  <div class="itemprice">President & CEO of Gucci</div>
-              </div>
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/ceo louis.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Michael Burke</div>
-                  <div class="itemprice">Founder & CEO of Louis Vuitton</div>
-              </div>
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/ceo versace.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Emmanuel Gintzburger</div>
-                  <div class="itemprice">CEO of Versace</div>
-              </div>
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/gucci.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Kim Taehyung</div>
-                  <div class="itemprice">Ambassador of Gucci</div>
-              </div>
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/louis.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Deepika Padukone</div>
-                  <div class="itemprice">Ambassador of Louis Vuitton</div>
-              </div>
-              <div class="productitem">
-                  <div class="itemimage">
-                  <img src="/static/img/versace.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Zendaya</div>
-                  <div class="itemprice">Ambassador of Versace</div>
-              </div>
-
-          </div>
-          </div>       
-      </div>
-      <div class="footer">
-        Copyright &#169; jeevitha&Design Private Limited, Developed by Preethi
-      </div>
-    </div>
-  </body>
-</html>
-
-### contact.html:
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>jeevitha&Design Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">jeevitha&Design Private Limited</div>
-      <div class="menu">
-        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitem"><a href="/static/contacts.html">Contact us</a></div>
-      </div>
-      <div class="content">
-        <div class="homecontent">
-          <h1>About Us</h1>
-       
-          <div class="contenttext">
-           Mail us at  jeevitha&Design@gmail.com
-           <br>
-           Contact us at 22009398
-           <br>
-           Our main office is at 5th car street,TamilNadu,India.
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        Copyright &#169; jeevitha&Design Private.Ltd, Developed by Preethi.
+        &#169; 2021 Apple Lt., Developed by jeevitha.
       </div>
     </div>
   </body>
 </html>
 ```
+## about.html:
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content p-con">
+        <h1 style="margin:auto;margin-top:50px;font-size:50px;">About Us</h1><br><br>
+        <p id="about-p">Apple is an American technology company founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976. Incorporated in 1977, the company was one of the early manufacturers of personal computing devices with graphical user interface. Over the years, the company also forayed into other consumer electronics segments like mobile communication devices, digital music players, notebooks, and wearables. The company also develops and markets a range of related software and services, accessories, and networking solutions. Currently, the company’s chief executive officer (CEO) is Timothy Donald Cook, commonly known as Tim Cook.
+            <br><br>
+            From smart wearables to digital content streaming platforms, Apple offers a wide range of products and services within a closed ecosystem. Its products include iMac desktops, MacBook notebooks, iPhone mobile devices, iPad tablets, iPod digital multimedia devices, Apple Watch and Apple TV. The services include iOS operating system for mobile devices, macOS operating system for notebooks and desktops, iCloud online storage, tvOS operating system for Apple TV, watchOS operating system for Apple Watch, iTunes for digital content services, Apple Pay digital payment service, Apple Music for online multimedia streaming, and Apple News.
+            <br><br>
+            Apple has been known to be on the forefront of innovation. The company was among the first to develop an app-based ecosystem for smartphones. It was the first smartphone maker to introduce touchID — a fingerprint scanner module to unlock a device — and use 64-bit processors, both of which were later also adopted by most other smartphone manufacturers.
+            <br><br>
+            Apple’s services have so far been exclusive to its own products. However, in March 2019, the company announced that its subscription-based TV Plus service will be available as an app on televisions from other brands, too. This is for the first time that Apple has enabled its ecosystem service to work on products from other brands, and more announcements of similar nature are expected in future.
+            <br><br>
+            In 2019, Apple also settled its long-pending legal battle with American chipmaker Qualcomm. The move came after the company found itself in a tight spot securing 5G chips to power its future devices. With Qualcomm on board, the company is expected to bring its first 5G-ready smartphone by 2020.</p>
+            <br><br>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by jeevitha.
+      </div>
+    </div>
+  </body>
+</html>
+```
+##  people.html:
+```
+<div class="profile-info">
+                    <h3 class="profile-name">Jonny Sins</h3>
+                    <p class="profile-desc">All Rounder</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">751</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.8m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">4</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" ></div>
+                <div class="profile-info">
+                    <h3 class="profile-name">Powervel</h3>
+                    <p class="profile-desc">Developer/Conent Creator</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">532</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.5m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">423</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_.jpg');"></div>
+        
+                <div class="profile-info">
+                    <h3 class="profile-name">RDJ</h3>
+                    <p class="profile-desc">Genius, billionaire,philanthropist.</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">532</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.5m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">423</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" style="background-image: url('https://file1.telestar.fr/var/telestar/storage/images/3/3/2/3/3323904/chris-evans-comment-failli-refuser-role-vie.jpg?alias=exact1024x768_l');"></div>
+        
+                <div class="profile-info">
+                    <h3 class="profile-name">Cris Evans</h3>
+                    <p class="profile-desc">Conent Creator</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">532</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.5m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">423</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" style="background-image: url('https://image.gala.de/21743318/t/N_/v12/w960/r0.6667/-/elizabeth-olsen.jpg');"></div>
+        
+                <div class="profile-info">
+                    <h3 class="profile-name">Elizabeth Olsen</h3>
+                    <p class="profile-desc">Developer</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">532</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.5m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">423</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-card-header">
+                <div class="profile-image" style="background-image: url('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Bruce-Banner.The-Incredible-Hulk.webp');"></div>
+                <div class="profile-info">
+                    <h3 class="profile-name">Bruce Banner</h3>
+                    <p class="profile-desc">Scientist</p>
+                </div>
+            </div>
+            <div class="profile-card-body">
+                <ul class="status">
+                    <li>
+                        <span class="status-value">532</span>
+                        <span class="status-text">Posts</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">1.5m</span>
+                        <span class="status-text">Followers</span>
+                    </li>
+        
+                    <li>
+                        <span class="status-value">423</span>
+                        <span class="status-text">Following</span>
+                    </li>
+                </ul>
+        
+                <div class="action">
+                    <button class="btn btn-pink">Follow</button>
+                    <button class="btn btn-gray-outline">Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer">
+    &#169; 2021 Apple Lt., Developed by jeevitha.
+  </div>
+</div>
+```
+##  products.html:
+```
+</div>
+      <div class="product-card">
+        <div class="badge new">New</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/airpods.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Airpods</span>
+          <h4><a href="">Apple Airpods Pro</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/macair.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Laptop</span>
+          <h4><a href="">Macbook Air</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/watch.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">IWatch</span>
+          <h4><a href="">Apple Watch</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="badge">Hot</div>
+      <div class="product-tumb">
+        <img src="{% static 'img/pro/tv.png' %}" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Monitor</span>
+        <h4><a href="">Apple Monitor</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$96.00</small>$230.99</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="badge">Hot</div>
+      <div class="product-tumb">
+        <img src="{% static 'img/pro/tab.jpg' %}" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Tab</span>
+        <h4><a href="">Apple Tablet</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$96.00</small>$230.99</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="badge">Hot</div>
+      <div class="product-tumb">
+        <img src="{% static 'img/pro/14pro.jpg' %}" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Mobile</span>
+        <h4><a href="">IPhone 14 Pro</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$96.00</small>$230.99</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <div class="product-card">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="{% static 'img/pro/13.jpg' %}" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">Mobile</span>
+      <h4><a href="">IPhone 14</a></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+      <div class="product-bottom-details">
+        <div class="product-price"><small>$96.00</small>$230.99</div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="{% static 'img/pro/11.jpg' %}" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">Mobile</span>
+      <h4><a href="">IPhone 11</a></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+      <div class="product-bottom-details">
+        <div class="product-price"><small>$96.00</small>$230.99</div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="{% static 'img/pro/7.jpg' %}" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">Mobile</span>
+      <h4><a href="">IPhone 7</a></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+      <div class="product-bottom-details">
+        <div class="product-price"><small>$96.00</small>$230.99</div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="product-card">
+  <div class="badge">Hot</div>
+  <div class="product-tumb">
+    <img src="{% static 'img/pro/12mini.jpg' %}" alt="">
+  </div>
+  <div class="product-details">
+    <span class="product-catagory">Mobile</span>
+    <h4><a href="">IPhone 12 Mini</a></h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+    <div class="product-bottom-details">
+      <div class="product-price"><small>$96.00</small>$230.99</div>
+      <div class="product-links">
+        <a href=""><i class="fa fa-heart"></i></a>
+        <a href=""><i class="fa fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="product-card">
+  <div class="badge">Hot</div>
+  <div class="product-tumb">
+    <img src="{% static 'img/pro/se.png' %}" alt="">
+  </div>
+  <div class="product-details">
+    <span class="product-catagory">Mobile</span>
+    <h4><a href="">IPhone SE</a></h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+    <div class="product-bottom-details">
+      <div class="product-price"><small>$96.00</small>$230.99</div>
+      <div class="product-links">
+        <a href=""><i class="fa fa-heart"></i></a>
+        <a href=""><i class="fa fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+    &#169; 2021 Apple Lt., Developed by jeevitha.
+  </div>
+</div>
 ## OUTPUT:
 ##  Home Page:
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/56196040-f4d3-467d-8330-4df4c6bdeb6f)
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/37af6093-9cd0-4391-9713-c4461dedd3a8)
+
 ##  Products Page:
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/6732efb2-6ef5-49a1-978b-83f1298f55d7)
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/a78bdeac-ce07-4c56-a51d-f6cef3bd31d7)
+
 ##  People Page:
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/182eb453-e38e-4c0e-a510-171d12f8c8e7)
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/86ec8ec6-2f6a-4781-93a7-13230b168603)
+
 ##  Contact Page:
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/0f1a4ca4-b105-4862-8fc6-58248ae454fb)
-##  Server Output:
-![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/26c3faaa-d204-422d-8ecd-ecdd1272c0ea)
+![image](https://github.com/Jeevithha/productcompanywebsite/assets/123623197/8e8bdbbc-03c1-419c-8fba-b691acbac1c6)
 
 ##  Result:
 
